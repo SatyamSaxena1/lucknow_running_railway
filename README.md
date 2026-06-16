@@ -1,6 +1,8 @@
 # Satyam Saxena Railway Projects
 
-Live portfolio: https://satyamsaxena1.github.io/lucknow_running_railway/
+Live portfolio: https://satyamsaxena1.github.io/
+
+Project Pages mirror: https://satyamsaxena1.github.io/lucknow_running_railway/
 
 This repository contains railway inspection project code, GPS route files, maps,
 launchers, reports, and utility scripts. Heavy model binaries are intentionally
@@ -8,8 +10,10 @@ not tracked in GitHub.
 
 ## GitHub Pages
 
-The root `index.html` is a static GitHub Pages frontend highlighting the project
-modules so visitors can open the work directly from the public profile link.
+The root `index.html` is a static GitHub Pages portfolio page highlighting the
+railway project alongside other public work. The dedicated portfolio repository
+is `SatyamSaxena1/SatyamSaxena1.github.io`; this project repo keeps a mirror so
+the existing project Pages link still presents the updated portfolio.
 
 # single_start_only
 
