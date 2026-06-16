@@ -1,3 +1,16 @@
+# Satyam Saxena Railway Projects
+
+Live portfolio: https://satyamsaxena1.github.io/lucknow_running_railway/
+
+This repository contains railway inspection project code, GPS route files, maps,
+launchers, reports, and utility scripts. Heavy model binaries are intentionally
+not tracked in GitHub.
+
+## GitHub Pages
+
+The root `index.html` is a static GitHub Pages frontend highlighting the project
+modules so visitors can open the work directly from the public profile link.
+
 # single_start_only
 
 ## UBUNTU
@@ -46,4 +59,3 @@ Cuda compilation tools, release 12.1, V12.1.66
 Build cuda_12.1.r12.1/compiler.32415258_0
 
 ```
-

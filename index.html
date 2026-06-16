@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Project portfolio for Satyam Saxena: railway computer vision, GPS route tooling, and deployment-ready engineering utilities.">
+    <title>Satyam Saxena Projects</title>
+    <link rel="preload" href="assets/railway-inspection-hero.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Satyam Saxena projects home">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span>Satyam Saxena</span>
+      </a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Links</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/railway-inspection-hero.png" alt="Railway inspection scene with overhead electric equipment and computer vision overlays">
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Computer Vision · Railways · Field Tools</p>
+          <h1 id="hero-title">Projects built for real-world railway inspection workflows.</h1>
+          <p class="hero-copy">
+            A public project hub for engineering tools that combine pantograph monitoring,
+            GPS route context, depth sensing, model conversion, and deployment scripts.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="PROJECT_TECHNICAL_REPORT.pdf">Read Report</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-strip" aria-label="Project highlights">
+        <div>
+          <strong>Railway AI</strong>
+          <span>Pantograph, arm, and infrastructure monitoring.</span>
+        </div>
+        <div>
+          <strong>GPS Tooling</strong>
+          <span>Route files, maps, and distance workflows.</span>
+        </div>
+        <div>
+          <strong>Deployment</strong>
+          <span>Launchers, conversion scripts, and camera utilities.</span>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured Work</p>
+          <h2 id="projects-title">Project Gallery</h2>
+          <p>
+            These are the pieces visitors can open from the profile page and use as entry
+            points into the codebase.
+          </p>
+        </div>
+
+        <div class="filter-bar" role="tablist" aria-label="Filter projects by type">
+          <button class="filter active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" type="button" data-filter="vision" role="tab" aria-selected="false">Vision</button>
+          <button class="filter" type="button" data-filter="gps" role="tab" aria-selected="false">GPS</button>
+          <button class="filter" type="button" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="vision tools">
+            <div class="project-meta">
+              <span>Primary</span>
+              <span>Python</span>
+            </div>
+            <h3>Pantograph Vision Monitor</h3>
+            <p>
+              A detection workflow around railway pantograph monitoring, depth context,
+              video writing, and runtime launchers for field setups.
+            </p>
+            <div class="project-links">
+              <a href="main.py">Open Core</a>
+              <a href="README.md">Setup Notes</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="gps">
+            <div class="project-meta">
+              <span>Route Data</span>
+              <span>Maps</span>
+            </div>
+            <h3>GPS Route Workspace</h3>
+            <p>
+              Route spreadsheets, converted files, and browser maps for aligning video
+              inspection work with physical railway location data.
+            </p>
+            <div class="project-links">
+              <a href="gps_files/map_gonda.html">Gonda Map</a>
+              <a href="gps_files/map_dali.html">Dali Map</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="vision tools">
+            <div class="project-meta">
+              <span>Camera</span>
+              <span>Depth</span>
+            </div>
+            <h3>ZED Depth Integration</h3>
+            <p>
+              Hardware-facing capture and implantation code for pairing RGB inspection
+              streams with depth data during railway monitoring.
+            </p>
+            <div class="project-links">
+              <a href="zed_implantation.py">View Module</a>
+              <a href="driver.py">Driver</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="tools vision">
+            <div class="project-meta">
+              <span>Optimization</span>
+              <span>TensorRT</span>
+            </div>
+            <h3>Model Conversion Tools</h3>
+            <p>
+              Utility scripts for model compilation, TensorRT conversion, camera index
+              checks, and distance testing around inspection pipelines.
+            </p>
+            <div class="project-links">
+              <a href="tools/torch-to-tensorRT.py">TensorRT Tool</a>
+              <a href="tools/">Tool Folder</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="stack" aria-labelledby="stack-title">
+        <div class="section-heading">
+          <p class="eyebrow">Engineering Stack</p>
+          <h2 id="stack-title">Built Around Field Conditions</h2>
+          <p>
+            The repo keeps the heavy model binaries out of GitHub, while preserving the
+            source, reports, maps, and utility scripts visitors need to understand the work.
+          </p>
+        </div>
+        <div class="stack-list" aria-label="Technology stack">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>YOLO Workflows</span>
+          <span>ZED Camera</span>
+          <span>GPS Data</span>
+          <span>TensorRT</span>
+          <span>GitHub Pages</span>
+          <span>Windows Launchers</span>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">From The Profile</p>
+          <h2 id="contact-title">A public launchpad for current and future projects.</h2>
+          <p>
+            Add this Pages URL to the GitHub profile README so visitors can jump from the
+            profile into the live project gallery.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="https://github.com/SatyamSaxena1/lucknow_running_railway">GitHub Repo</a>
+          <a class="button button-secondary" href="PROJECT_TECHNICAL_REPORT.md">Technical Report</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Satyam Saxena Projects</span>
+      <span>Railway inspection tools, maps, and vision utilities.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
