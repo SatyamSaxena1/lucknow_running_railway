@@ -114,14 +114,57 @@ img {
 
 .hero-shade {
   background:
-    linear-gradient(90deg, rgba(8, 14, 20, 0.88) 0%, rgba(8, 14, 20, 0.64) 42%, rgba(8, 14, 20, 0.12) 78%),
-    linear-gradient(180deg, rgba(8, 14, 20, 0.16), rgba(8, 14, 20, 0.65));
+    linear-gradient(90deg, rgba(8, 14, 20, 0.9) 0%, rgba(8, 14, 20, 0.7) 34%, rgba(8, 14, 20, 0.35) 72%),
+    linear-gradient(180deg, rgba(8, 14, 20, 0.18), rgba(8, 14, 20, 0.68));
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1.14fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  width: 100%;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: clamp(360px, 52vw, 620px);
+  overflow: hidden;
+}
+
+#rail-scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  touch-action: none;
+}
+
+.scene-readout {
+  position: absolute;
+  right: clamp(14px, 3vw, 28px);
+  bottom: clamp(14px, 3vw, 28px);
+  display: grid;
+  gap: 2px;
+  min-width: 112px;
+  border-left: 3px solid var(--amber);
+  padding: 10px 12px;
+  background: rgba(6, 14, 20, 0.68);
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.scene-readout strong {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
-  width: min(760px, 100%);
+  width: min(680px, 100%);
 }
 
 .eyebrow {
@@ -501,9 +544,15 @@ h1 {
   .signal-strip,
   .project-grid,
   .intro-section,
+  .hero-layout,
   .case-band,
   .contact-band {
     grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    min-height: 340px;
+    order: -1;
   }
 
   .section,
@@ -533,6 +582,38 @@ h1 {
     flex-wrap: wrap;
     justify-content: flex-end;
     max-width: 250px;
+  }
+
+  .hero-visual {
+    min-height: 214px;
+  }
+
+  .hero {
+    min-height: 0;
+    padding: 82px 23px 32px;
+  }
+
+  h1 {
+    font-size: clamp(44px, 16vw, 62px);
+  }
+
+  .hero-copy {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .button {
+    min-height: 44px;
+  }
+
+  .scene-readout {
+    min-width: 96px;
+    right: 10px;
+    bottom: 10px;
   }
 
   .button,

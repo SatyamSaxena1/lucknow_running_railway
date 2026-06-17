@@ -11,6 +11,13 @@
     <link rel="canonical" href="https://satyamsaxena1.github.io/">
     <link rel="preload" href="assets/railway-inspection-hero.png" as="image">
     <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.165.0/build/three.module.js"
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary">
@@ -30,16 +37,26 @@
       <section class="hero" aria-labelledby="hero-title">
         <img class="hero-image" src="assets/railway-inspection-hero.png" alt="Railway inspection scene with overhead electrical equipment and computer vision overlays">
         <div class="hero-shade" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Computer Vision / Railway AI / Applied Engineering</p>
-          <h1 id="hero-title">Satyam Saxena</h1>
-          <p class="hero-copy">
-            Building practical AI systems that connect vision models, GPS context, depth sensing,
-            reporting workflows, and deployment utilities for real-world inspection work.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button button-primary" href="#work">View Work</a>
-            <a class="button button-secondary" href="https://github.com/SatyamSaxena1">GitHub Profile</a>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Computer Vision / Railway AI / Applied Engineering</p>
+            <h1 id="hero-title">Satyam Saxena</h1>
+            <p class="hero-copy">
+              Building practical AI systems around railway inspection, vision models,
+              GPS context, depth sensing, reporting workflows, and deployment utilities.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#work">View Work</a>
+              <a class="button button-secondary" href="https://github.com/SatyamSaxena1">GitHub Profile</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Animated 3D railway inspection system">
+            <canvas id="rail-scene"></canvas>
+            <div class="scene-readout" aria-hidden="true">
+              <span>WIRE</span>
+              <strong>5.74m</strong>
+              <span>SCAN OK</span>
+            </div>
           </div>
         </div>
       </section>
@@ -239,6 +256,6 @@
       <span>Applied AI, railway inspection, GPS tooling, and deployment-ready utilities.</span>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
