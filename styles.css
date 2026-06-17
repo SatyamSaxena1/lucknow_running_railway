@@ -99,7 +99,8 @@ img {
   color: #fff;
 }
 
-.hero-image,
+.hero-video,
+.hero-fallback,
 .hero-shade {
   position: absolute;
   inset: 0;
@@ -107,15 +108,34 @@ img {
   height: 100%;
 }
 
-.hero-image {
+.hero-video,
+.hero-fallback {
   object-fit: cover;
   object-position: center;
+}
+
+.hero-video {
+  z-index: 0;
+}
+
+.hero-fallback {
+  z-index: -1;
 }
 
 .hero-shade {
   background:
     linear-gradient(90deg, rgba(8, 14, 20, 0.9) 0%, rgba(8, 14, 20, 0.7) 34%, rgba(8, 14, 20, 0.35) 72%),
     linear-gradient(180deg, rgba(8, 14, 20, 0.18), rgba(8, 14, 20, 0.68));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
+
+  .hero-fallback {
+    z-index: 0;
+  }
 }
 
 .hero-layout {
